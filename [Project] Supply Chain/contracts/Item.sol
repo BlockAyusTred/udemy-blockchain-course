@@ -26,5 +26,5 @@ contract Item {
         require(success, "The transaction wasn't successful, canceling");
     }
 
-    fallback() external {}
+    fallback() external {} // this is for remix otherwise we cannot interact with smart contract in remix ide
 }
