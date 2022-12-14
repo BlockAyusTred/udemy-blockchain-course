@@ -42,9 +42,12 @@
  */
 
 // require('dotenv').config();
-// const { MNEMONIC, PROJECT_ID } = process.env;
 
+// start - ( to use external wallet address from metamask or hardware wallet to use in truffle )
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
+// const MNEMONIC = ;
+// const AccountIndex = ;
+// now go to networks section in ganache_local
 
 module.exports = {
   /**
@@ -69,6 +72,12 @@ module.exports = {
      port: 7545,            // Standard Ethereum port (default: none)
      network_id: "*",       // Any network (default: none)
     },
+    // ganache_local: {
+    //   provider: function() {
+    //     return new HDWalletProvider(MNEMONIC, "http://127.0.0.1:7545", AccountIndex)
+    //   },
+    //   network_id: 5777,
+    // },
     //
     // An additional network, but with some advanced options…
     // advanced: {
